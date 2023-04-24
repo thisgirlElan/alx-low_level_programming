@@ -8,3 +8,6 @@
 
 #### Alphabets and a new line
 - Prints alphabets in lowercase followed by a new line
+
+#### AlphaBET
+- Prints alphabets in lowercase then uppercase followed by a new line
