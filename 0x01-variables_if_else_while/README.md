@@ -28,4 +28,7 @@
 - Prints all base 16 numbers and letters in lowercase
 
 #### Single digit combinations
--Prints single digit numbers separated by `, `.
+- Prints single digit numbers separated by `, `.
+
+#### Two digit combinations
+- Prints two digits separated by `, ` where no combination repeats in whichever order and only the smallest combination is printed.
