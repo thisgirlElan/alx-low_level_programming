@@ -2,9 +2,9 @@
 #include <unistd.h>
 
 /**
-* main - Entry point
+* main - write output
 *
-* return 1
+* Return: 1
 */
 int main(void)
 {
