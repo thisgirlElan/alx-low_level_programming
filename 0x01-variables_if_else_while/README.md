@@ -23,3 +23,6 @@
 
 #### Reverse Alphbets
 - Prints all alphabets in reverse order
+
+#### Print Base 16
+- Prints all base 16 numbers and letters in lowercase
