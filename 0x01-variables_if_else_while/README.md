@@ -32,3 +32,6 @@
 
 #### Two digit combinations
 - Prints two digits separated by `, ` where no combination repeats in whichever order and only the smallest combination is printed.
+
+#### Three digit combinations
+- Prints three digits separated by `, ` in ascending order where no combination repeats in whichever order and only the smallest combination is printed. 
