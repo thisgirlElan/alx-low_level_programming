@@ -35,3 +35,6 @@
 
 #### Three digit combinations
 - Prints three digits separated by `, ` in ascending order where no combination repeats in whichever order and only the smallest combination is printed. 
+
+#### Two two-digit combinations
+- Prints numbers ranging from 0 - 99 separated by `, ` as two two digit numbers. 
