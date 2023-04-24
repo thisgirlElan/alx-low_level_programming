@@ -12,5 +12,8 @@
 #### AlphaBET
 - Prints alphabets in lowercase then uppercase followed by a new line
 
-#### alphabets with exceptions
+#### Alphabets with exceptions
 - Prints all the letters except q and e
+
+#### Single digit numbers
+- Prints all single digit numbers of base 10 starting from 0
