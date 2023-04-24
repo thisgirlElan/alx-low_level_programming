@@ -20,3 +20,6 @@
 
 #### Single digit numbers (putchar)
 - Prints all single digit numbers of base 10 starting from 0
+
+#### Reverse Alphbets
+- Prints all alphabets in reverse order
