@@ -11,3 +11,6 @@
 
 #### AlphaBET
 - Prints alphabets in lowercase then uppercase followed by a new line
+
+#### alphabets with exceptions
+- Prints all the letters except q and e
