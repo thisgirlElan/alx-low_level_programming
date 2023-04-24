@@ -17,3 +17,6 @@
 
 #### Single digit numbers
 - Prints all single digit numbers of base 10 starting from 0
+
+#### Single digit numbers (putchar)
+- Prints all single digit numbers of base 10 starting from 0
