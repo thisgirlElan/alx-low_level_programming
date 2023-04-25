@@ -35,3 +35,18 @@
 
 #### 98 Battery Street
 - Prints all natural numbers from n to 98, and a newline
+
+#### print times table
+- Prints multiples of n where n is not > 15 || n < 0
+
+#### Sum of multiples
+- Prints sum of multiples of 3 or 5 below 1024, excluding 1024 followed by a new line
+
+#### Fibonacci 50
+- Prints first 50 fib numbers starting with 1 and 2 and a new line.
+
+#### Fibonacci Sum
+- Prints sum of even numbers in the fibonacci sequence less than 4m...followed by a new line
+
+#### Fibonacci 98
+- Prints first 98 Fibonacci numbers starting with 1 and 2 followed by a new line
