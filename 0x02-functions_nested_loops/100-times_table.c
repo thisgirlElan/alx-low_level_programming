@@ -3,6 +3,7 @@
 /**
 * print_times_table - prints multiples of n
 *prints nothing if n > 15 || n < 0
+*@n: represents value
 *
 * Return: 0
 */

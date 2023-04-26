@@ -4,6 +4,7 @@
 /**
 * print_to_98 - prints natural numbers from n to 98 and a new line
 *values separated by a comma and printed in order
+*@n: represents value
 *
 * Return: 0
 */
