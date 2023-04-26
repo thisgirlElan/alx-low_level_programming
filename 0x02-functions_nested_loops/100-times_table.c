@@ -15,10 +15,10 @@ int prod;
 
 if (n >= 0 && n <= 15)
 {
-for (num = 0; num < n; num++)
+for (num = 0; num <= n; num++)
 {
 _putchar('0');
-for (mult = 0; mult < n; mult++)
+for (mult = 0; mult <= n; mult++)
 {
 _putchar(',');
 _putchar(' ');
