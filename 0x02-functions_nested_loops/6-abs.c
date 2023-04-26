@@ -3,6 +3,7 @@
 
 /**
 * _abs - checks the absolute value of an integer
+*@r: value being returned
 *
 * Return: the absolute value
 */
