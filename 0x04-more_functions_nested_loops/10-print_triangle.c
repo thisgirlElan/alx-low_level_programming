@@ -22,9 +22,9 @@ _putchar(' ');
 }
 for (hash = 1; hash <= row; hash++)
 {
-_putchar('#')
+_putchar('#');
 }
-_putchar('\n')
+_putchar('\n');
 }
 
 }
