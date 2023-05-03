@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-* _strcpy - check the code
+* _strcpy - copies src string and returns dest pointer
 * @dest: dest char
 * @src: src char
 *
@@ -12,9 +12,10 @@
 char *_strcpy(char *dest, char *src)
 {
 int i = 0;
-while (src[i] != '\0') {
-    dest[i] = src[i];
-    i++;
+while (src[i] != '\0')
+{
+dest[i] = src[i];
+i++;
 }
 
 dest[i] = '\0';
