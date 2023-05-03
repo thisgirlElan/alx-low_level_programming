@@ -1,0 +1,4 @@
+## 0x05. C - Pointer, Arrays and Strings
+
+#### strcpy
+- A function that copies the string pointed to by src, including the terminating null byte (\0), to the buffer pointed to by dest and returns `*dest`
