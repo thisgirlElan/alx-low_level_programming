@@ -4,8 +4,7 @@
 /**
 * print_array - prints n elements of an array of integers, followed by a new line
 * @a: pointer a
-* @n: number of elements in an array to be printed
-*
+* @n: number of [] elements to be printed
 * Return: 0 succes.
 */
 void print_array(int *a, int n)
