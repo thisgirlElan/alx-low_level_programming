@@ -18,5 +18,5 @@ str[i] = str[i] - 32;
 }
 }
 
-return str;
+return (str);
 }
