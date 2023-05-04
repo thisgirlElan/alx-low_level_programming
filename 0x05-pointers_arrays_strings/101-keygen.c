@@ -9,24 +9,27 @@
  *
  * Return: 0
  */
-
 int main(void)
 {
-int i, password[PASSWORD_LENGTH];
+char password[PASSWORD_LENGTH + 1];
+int i, rand_num;
 
-srand((unsigned int)time(NULL));
+srand(time(NULL));
 
-for (i = 0; i < PASSWORD_LENGTH; i++)
-{
-password[i] = rand() % 94 + 33;
+for (i = 0; i < PASSWORD_LENGTH; i++) {
+rand_num = rand() % 62;
+if (rand_num < 26) {
+password[i] = 'a' + rand_num;
+} else if (rand_num < 52) {
+password[i] = 'A' + rand_num - 26;
+} else {
+password[i] = '0' + rand_num - 52;
+}
 }
 
-printf("Password: ");
-for (i = 0; i < PASSWORD_LENGTH; i++)
-{
-printf("%c", password[i]);
-}
-printf("\n");
+password[PASSWORD_LENGTH] = '\0';
+
+printf("%s\n", password);
 
 return 0;
 }
