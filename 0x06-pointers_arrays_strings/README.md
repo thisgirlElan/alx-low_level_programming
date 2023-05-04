@@ -21,5 +21,5 @@
 #### Capitalize
 - A function that capitalizes all words of a string
 
-#### Leet Up 🤵🏽
+#### You just got Leet Up 🤵🏽
 - A function that encodes a string into 1337 `Leet`
