@@ -6,7 +6,7 @@
 * @b: destination string
 * @size: source string
 *
-* Return: pointer to dest
+* Return: 0
 */
 
 void print_buffer(char *b, int size)
@@ -16,7 +16,7 @@ int i, j;
 if (size <= 0)
 {
 printf("\n");
-return;
+return (0);
 }
 
 for (i = 0; i < size; i += 10)
@@ -24,7 +24,7 @@ for (i = 0; i < size; i += 10)
 printf("%08x: ", i);
 for (j = 0; j < 10; j++)
 {
-if (i+j < size)
+if ((i+j) < size)
 {
 printf("%02x", b[i+j]);
 }
@@ -39,7 +39,7 @@ printf(" ");
 }
 for (j = 0; j < 10; j++)
 {
-if (i+j < size)
+if ((i+j) < size)
 {
 if (b[i+j] >= 32 && b[i+j] <= 126)
 {
