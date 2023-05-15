@@ -13,13 +13,14 @@ int index = 0;
 
 while (s1[index] != '\0' && s2[index] != '\0' && s1[index] == s2[index])
 {
-        index++;
+index++;
 }
 
 if (s1[index] == s2[index])
 {
 return (0);
-} else
+}
+else
 {
 return (s1[index] - s2[index]);
 }
