@@ -28,4 +28,3 @@ src++;
 
 return (dest_start);
 }
-
