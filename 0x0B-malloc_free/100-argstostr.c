@@ -10,7 +10,7 @@
 * Return:  a pointer to a new string, or NULL if it fails
 */
 
-char* argstostr(int ac, char** av)
+char *argstostr(int ac, char **av)
 {
 if (ac == 0 || av == NULL)
 return (NULL);
@@ -19,7 +19,7 @@ size_t total_length = 0;
 for (int i = 0; i < ac; i++)
 total_length += strlen(av[i]) + 1;
 
-char* concatenated = (char*)malloc((total_length + 1) * sizeof(char));
+char *concatenated = (char *)malloc((total_length + 1) * sizeof(char));
 if (concatenated == NULL)
 return (NULL);
 

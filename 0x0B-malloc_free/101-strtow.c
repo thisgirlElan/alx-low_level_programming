@@ -39,13 +39,13 @@ str++;
 return (count);
 }
 
-char** strtow(char* str)
+char **strtow(char *str)
 {
 if (str == NULL || strcmp(str, "") == 0)
 return (NULL);
 
 int num_words = count_words(str);
-char** words = (char**)malloc((num_words + 1) * sizeof(char*));
+char **words = (char **)malloc((num_words + 1) * sizeof(char *));
 
 if (words == NULL)
 return (NULL);
@@ -62,13 +62,13 @@ if (!in_word)
 {
 in_word = 1;
 word_length = 0;
-char* start = str;
+char *start = str;
 while (*str && !is_space(*str))
 {
 word_length++;
 str++;
 }
-words[word_index] = (char*)malloc((word_length + 1) * sizeof(char));
+words[word_index] = (char *)malloc((word_length + 1) * sizeof(char));
 if (words[word_index] == NULL)
 {
 for (int i = 0; i < word_index; i++)

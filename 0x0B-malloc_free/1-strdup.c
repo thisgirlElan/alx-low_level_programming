@@ -11,13 +11,13 @@
 * Return: s1 + s2 || NULL
 */
 
-char* _strdup(char* str)
+char *_strdup(char *str)
 {
 if (str == NULL)
 return (NULL);
 
 size_t length = strlen(str);
-char* duplicate = (char*)malloc((length + 1) * sizeof(char));
+char *duplicate = (char *)malloc((length + 1) * sizeof(char));
 
 if (duplicate == NULL)
 return (NULL);

@@ -10,7 +10,7 @@
 * Return: s1 + s2 || NULL
 */
 
-char* str_concat(char* s1, char* s2)
+char *str_concat(char *s1, char *s2)
 {
 if (s1 == NULL)
 s1 = "";
@@ -20,7 +20,7 @@ s2 = "";
 size_t s1_length = strlen(s1);
 size_t s2_length = strlen(s2);
 
-char* concatenated = (char*)malloc((s1_length + s2_length + 1) * sizeof(char));
+char *concatenated = (char *)malloc((s1_length + s2_length + 1) * sizeof(char));
 
 if (concatenated == NULL)
 return (NULL);
