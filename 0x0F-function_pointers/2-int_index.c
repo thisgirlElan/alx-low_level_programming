@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "function_pointers.h"
+#include <stddef.h>
 
 /**
 * int_index - Executes function
@@ -12,7 +13,7 @@
 
 int int_index(int *array, int size, int (*cmp)(int))
 {
-if (size <= 0)
+if (array == NULL || cmp == NULL || size <= 0)
 return (-1);
 
 for (int i = 0; i < size; i++)
@@ -24,7 +25,3 @@ return (i);
 return (-1);
 }
 
-int compare_even(int num)
-{
-return (num % 2 == 0) ? 1 : 0;
-}
