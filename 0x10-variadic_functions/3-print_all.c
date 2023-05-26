@@ -1,5 +1,3 @@
-#include <stdarg.h>
-#include <stdio.h>
 #include "variadic_functions.h"
 
 /**
@@ -11,48 +9,46 @@
 void print_all(const char * const format, ...)
 {
 va_list args;
+unsigned int i = 0, j, k = 0;
+char *str;
+const char t_arg[] = "cifs";
+
 va_start(args, format);
+while (format && format[i])
+{
+j = 0;
 
-int i = 0;
-char c;
-char *s;
-float f;
-
-while (format[i] != '\0')
+while (t_arg[j])
 {
-if (format[i] == 'c')
-{
-c = (char)va_arg(args, int);
-printf("%c", c);
-} else if (format[i] == 'i')
-{
-int num = va_arg(args, int);
-printf("%d", num);
-} else if (format[i] == 'f')
-{
-f = (float)va_arg(args, double);
-printf("%f", f);
-} else if (format[i] == 's')
-{
-s = va_arg(args, char *);
-if (s == NULL) {
-printf("(nil)");
-}
-else
-{
-printf("%s", s);
-}
-}
-
-if (format[i + 1] != '\0' && (format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || format[i] == 's'))
+if (format[i] == t_arg[j] && k)
 {
 printf(", ");
+break;
+} j++;
 }
 
-i++;
+switch (format[i])
+{
+case 'c':
+printf("%c", va_arg(args, int)), k = 1;
+break;
+case 'i':
+printf("%d", va_arg(args, int)), k = 1;
+break;
+case 'f':
+printf("%f", va_arg(args, double)), k = 1;
+break;
+case 's':
+str = va_arg(args, char *), k = 1;
+if (!str)
+{
+printf("(nil)");
+break;
+}
+printf("%s", str);
+break;
+} i++;
 }
 
-va_end(args);
-
-printf("\n");
+printf("\n"), va_end(args);
 }
