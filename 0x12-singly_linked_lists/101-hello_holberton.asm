@@ -1,19 +1,16 @@
 section .data
-hello db "Hello, Holberton", 10
-len equ $ - hello
+    message db "Hello, Holberton", 0
 
 section .text
-global _start
+    extern printf
+
+    global _start
 
 _start:
-; Write the string to stdout
-mov eax, 4
-mov ebx, 1
-mov ecx, hello
-mov edx, len
-int 0x80
+    mov rdi, message
+    xor rax, rax
+    call printf
 
-; Exit the program
-mov eax, 1
-xor ebx, ebx
-int 0x80
+    xor edi, edi
+    mov eax, 60
+    syscall
