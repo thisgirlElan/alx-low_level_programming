@@ -1,11 +1,9 @@
 #include "lists.h"
 
 /**
-* struct listint_s - singly linked list
+* free_listint2 - Frees a listint_t list and sets the head to NULL.
 * @head: pointer to the head of the list
-* @next: points to the next node
 *
-* Description: Set the head pointer to NULL
 * Return: Success 0
 */
 
