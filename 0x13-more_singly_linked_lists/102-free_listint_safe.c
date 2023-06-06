@@ -21,7 +21,7 @@ if (current->next >= current)
 temp = current->next;
 free(current);
 *h = NULL;
-return count;
+return (count);
 }
 temp = current;
 current = current->next;
