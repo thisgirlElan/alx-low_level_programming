@@ -30,5 +30,5 @@ free(temp);
 
 *h = NULL;
 
-return count;
+return (count);
 }
