@@ -6,26 +6,31 @@
 *
 * Return: Always 0.
 */
-
 void print_number(int n)
 {
-unsigned int i = n;
-
 if (n < 0)
 {
 _putchar('-');
-i = -i;
+n = -n
+}
+
+if (n == 0)
+{
+_putchar('0');
 }
 else
 {
-i = i;
+print_positive_number(n)
+}
 }
 
-
-if (i > 9)
+void print_positive_number(int n)
 {
-print_number(i / 10);
+if (n == 0){
+return;
 }
-_putchar(i % 10 + '0');
-
+int last_digit = n % 10;
+int remaining_digits = n / 10;
+print_positive_number(remaining_digits);
+_putchar('0' + last_digit)
 }

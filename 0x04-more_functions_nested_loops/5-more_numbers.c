@@ -8,20 +8,24 @@
 
 void more_numbers(void)
 {
-int number, row, tens, units;
+int i;
 
-for (row = 0; row < 10; row++)
+for (i = 0; i < 10; i++)
 {
+int number;
 for (number = 0; number <= 14; number++)
 {
-tens = number / 10;
-units = number % 10;
 if (number > 9)
 {
-_putchar(tens + '0');
+print_digit(number / 10);
 }
-_putchar(units + '0');
+print_digit(number % 10)
 }
-_putchar(10);
+_putchar('\n');
 }
+}
+
+void print_digit(char num)
+{
+_putchar('0' + num);
 }
