@@ -19,7 +19,7 @@ if (number > 9)
 {
 print_digit(number / 10);
 }
-print_digit(number % 10)
+print_digit(number % 10);
 }
 _putchar('\n');
 }
