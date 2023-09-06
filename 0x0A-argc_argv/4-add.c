@@ -18,15 +18,24 @@ for (int i = 1; i < argc; i++)
 int j = 0;
 while (argv[i][j] != '\0')
 {
-if (!isdigit(argv[i][j]))
+if (argv[i][j] > '9' || argv[i][j] < '0')
 {
 printf("Error\n");
 return (1);
 }
 j++;
 }
-sum += atoi(argv[i]);
 }
+int k = 1;
+for (;k < argc; k++)
+{
+int num = _atoi(argv[k]);
+if (num >= 0)
+{
+sum += num;
+}
+}
+
 printf("%d\n", sum);
 return (0);
 }
