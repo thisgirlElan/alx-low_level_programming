@@ -14,16 +14,22 @@
 char *_strdup(char *str)
 {
 char *duplicate;
+int length, j;
 
 if (str == NULL)
 return (NULL);
 
-size_t length = strlen(str);
+length = 0;
+while (str[i] != '\0')
+length++;
+
 duplicate = malloc((length + 1) * sizeof(char));
 
 if (duplicate == NULL)
 return (NULL);
 
-strcpy(duplicate, str);
+for(j = 0; str[j]; j++)
+duplicate[j] = str[j];
+
 return (duplicate);
 }
