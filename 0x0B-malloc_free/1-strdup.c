@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
-* _strdup - returns a pointer to a newly allocated space in memory,
+* _strdup - returns duplicate to new space in memory,
 * which contains a copy of the string given as a parameter.
 * @s1: char
 * @s2: char
