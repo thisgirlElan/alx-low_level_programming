@@ -28,7 +28,7 @@ duplicate = malloc((length + 1) * sizeof(char));
 if (duplicate == NULL)
 return (NULL);
 
-for(j = 0; str[j]; j++)
+for (j = 0; str[j]; j++)
 duplicate[j] = str[j];
 
 return (duplicate);
