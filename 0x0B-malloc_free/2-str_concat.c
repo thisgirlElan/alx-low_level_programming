@@ -35,12 +35,13 @@ return (NULL);
 i = j = 0;
 while (s1[i] != '\0')
 {
-concatenated[i] = s1[i]
+concatenated[i] = s1[i];
 i++;
 }
+
 while (s2[j] != '\0')
 {
-concatenated[i] = s2[j]
+concatenated[i] = s2[j];
 i++, j++;
 }
 
