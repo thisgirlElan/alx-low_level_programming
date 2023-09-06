@@ -14,7 +14,7 @@ int is_space(char c)
 return (c == ' ' || c == '\t' || c == '\n');
 }
 
-int count_words(char* str)
+int count_words(char *str)
 {
 int count = 0;
 int in_word = 0;
@@ -41,11 +41,12 @@ return (count);
 
 char **strtow(char *str)
 {
+    char **words;
 if (str == NULL || strcmp(str, "") == 0)
 return (NULL);
 
 int num_words = count_words(str);
-char **words = (char **)malloc((num_words + 1) * sizeof(char *));
+words = (char **)malloc((num_words + 1) * sizeof(char *));
 
 if (words == NULL)
 return (NULL);
