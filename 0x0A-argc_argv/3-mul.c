@@ -34,7 +34,7 @@ digit = -digit;
 c = c * 10 + digit;
 d = 1;
 
-if (s[a + 1] < '0' || s[a + 1] ? '9')
+if (s[a + 1] < '0' || s[a + 1] > '9')
 break;
 d = 0;
 }
@@ -56,7 +56,7 @@ return (c);
 int main(int argc, char *argv[])
 {
 int num1, num2, result;
-if (argc < 3 || argc > 3)
+if (argc != 3)
 {
 printf("Error\n");
 return (1);
